@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+td {width:150px;height:150px;}
+td.red {background-color: red;}
+td.green {background-color: green;}
+
+</style>
+</head>
+
+
+<body>
+<h1>Welcome to my Tic-tac-toe</h1>
+<table border ="1">
+<tr> 
+					<td id="cell1" onclick="Colour('cell1')" class=""></td>
+					<td id="cell2" onclick="Colour('cell2')" class=""></td>
+					<td id="cell3" onclick="Colour('cell3')" class=""></td>
+</tr>
+
+<tr> 
+					<td id="cell4" onclick="Colour('cell4')" class=""></td>
+					<td id="cell5" onclick="Colour('cell5')" class=""></td>
+					<td id="cell6" onclick="Colour('cell6')" class=""></td>
+</tr>
+
+<tr> 
+					<td id="cell7" onclick="Colour('cell7')" class=""></td>
+					<td id="cell8" onclick="Colour('cell8')" class=""></td>
+					<td id="cell9" onclick="Colour('cell9')" class=""></td>
+</tr>
+</table>
+
+<script>
+var player = 1; 
+function Colour(cell) 
+
+{
+	if (player == 1)
+
+	{
+			document.getElementById(cell).className = "red";
+	
+	player+=1;
+    
+    }
+	else 
+    {
+
+			document.getElementById(cell).className="green";
+	
+	player-=1;
+	}
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
